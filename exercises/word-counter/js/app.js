@@ -9,7 +9,6 @@ const text = document.getElementById("text");
 const stat = document.getElementById("stat");
 
 text.addEventListener("keyup", (event) => {
-  debugger;
   var textAreaValue = text.value;
   stat.innerHTML = `You've written ` + textAreaValue.split(" ").length + ` words and ` + textAreaValue.length + ` characters.`;
 });

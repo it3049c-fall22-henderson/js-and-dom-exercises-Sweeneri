@@ -4,3 +4,12 @@
 // 🤖: Create an Event Listener on textarea input
 // 🤖: The event handler should update the stats section with the number of words and characters in the textarea input.
 // 🤖: You will need to utilize the split method to get the words count.
+
+const text = document.getElementById("text");
+const stat = document.getElementById("stat");
+
+text.addEventListener("keyup", (event) => {
+  debugger;
+  var textAreaValue = text.value;
+  stat.innerHTML = `You've written ` + textAreaValue.split(" ").length + ` words and ` + textAreaValue.length + ` characters.`;
+});
